@@ -1,0 +1,32 @@
+/* --- iPhone --- */
+@media (-webkit-min-device-pixel-ratio : 2){
+    .form { width: 90%; margin: 80px auto;}
+	#coordlon, #coordlat, #chatopen, #network, #exit{display: none;}
+	#dev_exp {display: block;}
+}
+
+@media only screen 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+    .block3, .menu {display: none;}
+    .content {overflow-x: hidden;}
+    .sign-link-phone {display: inline-block;} 
+	
+    
+    #dev_exp, #dev_coll  {margin-top: 12px;}
+}
+
+
+@media only screen 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+    #menutabs{display: none;}
+}
+
+ /* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+    #coordlon, #coordlat {display: none;}
+}
+
+
+

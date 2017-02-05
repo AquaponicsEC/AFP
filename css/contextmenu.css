@@ -1,0 +1,88 @@
+/*Main Context Menu*/
+.ContextMenu, .ContextMenu ul {
+    display: none;
+    position: absolute;
+    background: #FAFAFA url(../../images/menu_indent.gif) repeat-y left top;
+    border: 1px solid #C0C0C0;
+    width: 190px;
+    margin: 0px;
+    padding: 0px;
+}
+/*.ContextMenu li:hover > ul{ display: block; } Display Submenu*/
+
+.ContextMenu ul{position: absolute; top: -2px; right: -5px; height: 300px; overflow: auto;}
+/*.ContextMenu ul{position: absolute; left: 97%; top: -2px; right: 5px;}Display submenu1 idented*/
+.ContextMenu ul ul{ position: absolute; left: 97%; top: -2px;} /*Display submenu2 indented*/
+.ContextMenu li{ display:block; margin:1px 0px 0px 1px;}
+
+/*Font Sytle and Position*/
+.ContextMenu a,  .ContextMenu li a:hover
+{
+    display: block;
+    font-size: 10pt;
+    text-align: left;
+    text-decoration: none;
+    color: #000000;
+    cursor: default;
+    border: 1px solid #FAFAFA;
+    padding: 5px 3px 5px 3px;
+    margin-left: 34px;
+    text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+}
+
+.ContextMenu li:hover{ position:relative; } /*Keep position next to the selection*/
+
+/*Keep size hover*/
+.ContextMenu li:hover > a
+{
+    margin: 0px 1px 1px 0px;
+    text-indent: 34px;
+    color: black;
+    border: 1px solid #638ED8;
+    background:  url(../../images/bg_blue3.gif) repeat-x;
+/*    background: #C1D2EE none no-repeat center;*/
+}
+
+.ContextMenu span
+{
+    display: block;
+    background-image: url(../../images/arrow_sub5.gif);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 12px;
+}
+
+.ContextMenu .menuSeparator { margin:1px 0px 0px 30px; border-top:1px solid #C5C5C5;}
+
+/*#submenu::-webkit-scrollbar {
+    width: 0px;
+}*/
+
+/*#submenu {height: 142px; overflow: auto;}*/
+
+
+/*** STYLE FOR DEVICES ***/
+@media (-webkit-min-device-pixel-ratio : 2){
+
+}
+
+
+@media only screen 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+    .ContextMenu, .ContextMenu ul {
+        /*width: 70%;*/
+    }
+    /*.ContextMenu a,  .ContextMenu li a:hover { padding: 10px 3px 10px 3px; }*/
+}
+
+
+/** Ipad **/
+@media only screen and (device-width: 768px) {
+    #coordlon, #coordlat {display: none;}
+}
+
+
+ 
+
+               
